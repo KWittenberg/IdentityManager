@@ -70,7 +70,7 @@ namespace IdentityManager.Controllers
         }
 
         [Authorize(Policy = "AdminWithMoreThan1000Days")]
-        public IActionResult OnlyBhrugen()
+        public IActionResult OnlyKejo()
         {
             return View();
         }

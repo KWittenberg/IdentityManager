@@ -1,8 +1,8 @@
 ﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
 @model IdentityManager.Models.ViewModel.RegisterViewModel
-<h1 class="text-info">Register</h1>
+<h1 class="text-info">Register PERO</h1>
 <form asp-controller="Account" asp-action="Register" method="post" role="form">
-    <h4>Create a new account</h4>
+    <h4>Create a PERO account</h4>
     <hr />
     <div asp-validation-summary="All" class="text-danger"></div>
     <div class="form-group">
@@ -48,6 +48,8 @@
     </div>
 </form>
 
-@section Scripts{ 
-@{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
-}
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }
